@@ -13,7 +13,7 @@ def gen_image(width, height, seed):
                     (rnd.randrange(256), rnd.randrange(256), rnd.randrange(256)))
     draw = ImageDraw.Draw(img)
 
-    # draw rectangles (must sort coords so Pillow doesn't error)
+    # draw rectangles
     for _ in range(60):
         x1 = rnd.randrange(width)
         y1 = rnd.randrange(height)
